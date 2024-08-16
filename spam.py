@@ -252,8 +252,8 @@ def termux():
 	apakah()
 def main():
 	print(logo())
-	print(b+'╔══════════════════════════════\n'+b+'║'+h+'〘 '+m+'MODE '+h+'〙\n'+b+'╠══════════════════════════════'+b+'\n║'+m+'『'+h+'▣'+m+'』'+bm+' Back\n'+b+'╠══════════════════════════════'+b+'\n║'+m+'『'+h+'1'+m+'』 '+bm+'Single Number\n'+b+'║'+m+'『'+h+'2'+m+'』 '+bm+'Multi Number\n'+b+'║'+m+'『'+h+'3'+m+'』 '+bm+'Load number from file\n'+b+'║'+m+'『'+h+'4'+m+'』 '+bm+'Select number from contact\n'+b+'╠══════════════════════════════')
-	pil=str(input(b+'╚══'+m+'〙'+u+'Mode'+m+' ▶ '+h))
+	print(b+'╔══════════════════════════════\n'+b+'║'+h+'〘 '+m+'MODO '+h+'〙\n'+b+'╠══════════════════════════════'+b+'\n║'+m+'『'+h+'▣'+m+'』'+bm+' Atrás\n'+b+'╠══════════════════════════════'+b+'\n║'+m+'『'+h+'1'+m+'』 '+bm+'Single Number\n'+b+'║'+m+'『'+h+'2'+m+'』 '+bm+'Número múltiple\n'+b+'║'+m+'『'+h+'3'+m+'』 '+bm+'Cargar número desde archivo\n'+b+'║'+m+'『'+h+'4'+m+'』 '+bm+'Seleccione el número de contacto\n'+b+'╠══════════════════════════════')
+	pil=str(input(b+'╚══'+m+'〙'+u+'Modo'+m+' ▶ '+h))
 	if( pil == '1' or pil == '01'):
 		single()
 	elif( pil == '2' or pil == '02'):
@@ -271,7 +271,7 @@ def main():
 def jnspam():
 	global jns
 	print(logo())
-	print(b+'╔══════════════════════════════\n'+b+'║'+h+'〘 '+m+'SPAM '+h+'〙\n'+b+'╠══════════════════════════════'+b+'\n║'+m+'『'+h+'▣'+m+'』'+bm+' Exit\n'+b+'╠══════════════════════════════'+b+'\n║'+m+'『'+h+'1'+m+'』 '+bm+'All\n'+b+'║'+m+'『'+h+'2'+m+'』 '+bm+'PHD\n'+b+'║'+m+'『'+h+'3'+m+'』 '+bm+'KitaBisa\n'+b+'║'+m+'『'+h+'4'+m+'』 '+bm+'Tokopedia\n'+b+'║'+m+'『'+h+'5'+m+'』 '+bm+'TokoTalk (Unlimited)\n'+b+'║'+m+'『'+h+'6'+m+'』 '+bm+'Balaji (Without +62 or 0)\n'+b+'╠══════════════════════════════')
+	print(b+'╔══════════════════════════════\n'+b+'║'+h+'〘 '+m+'SPAM '+h+'〙\n'+b+'╠══════════════════════════════'+b+'\n║'+m+'『'+h+'▣'+m+'』'+bm+' Salir\n'+b+'╠══════════════════════════════'+b+'\n║'+m+'『'+h+'1'+m+'』 '+bm+'Todos\n'+b+'║'+m+'『'+h+'2'+m+'』 '+bm+'PHD\n'+b+'║'+m+'『'+h+'3'+m+'』 '+bm+'KitaBisa\n'+b+'║'+m+'『'+h+'4'+m+'』 '+bm+'Tokopedia\n'+b+'║'+m+'『'+h+'5'+m+'』 '+bm+'TokoTalk (Ilimitado)\n'+b+'║'+m+'『'+h+'6'+m+'』 '+bm+'Balaji (Sin +58 o 0)\n'+b+'╠══════════════════════════════')
 	while True:
 		oy=str(input(b+'╚══'+m+'〙'+u+'Spam'+m+' ▶ '+h))
 		if( oy == '1' or oy == '01' ):
