@@ -252,7 +252,7 @@ def termux():
 	apakah()
 def main():
 	print(logo())
-	print(b+'╔══════════════════════════════\n'+b+'║'+h+'〘 '+m+'MODO '+h+'〙\n'+b+'╠══════════════════════════════'+b+'\n║'+m+'『'+h+'▣'+m+'』'+bm+' Atrás\n'+b+'╠══════════════════════════════'+b+'\n║'+m+'『'+h+'1'+m+'』 '+bm+'Single Number\n'+b+'║'+m+'『'+h+'2'+m+'』 '+bm+'Número múltiple\n'+b+'║'+m+'『'+h+'3'+m+'』 '+bm+'Cargar número desde archivo\n'+b+'║'+m+'『'+h+'4'+m+'』 '+bm+'Seleccione el número de contacto\n'+b+'╠══════════════════════════════')
+	print(b+'╔══════════════════════════════\n'+b+'║'+h+'〘 '+m+'MODO '+h+'〙\n'+b+'╠══════════════════════════════'+b+'\n║'+m+'『'+h+'▣'+m+'』'+bm+' Atrás\n'+b+'╠══════════════════════════════'+b+'\n║'+m+'『'+h+'1'+m+'』 '+bm+'Número único\n'+b+'║'+m+'『'+h+'2'+m+'』 '+bm+'Número múltiple\n'+b+'║'+m+'『'+h+'3'+m+'』 '+bm+'Cargar número desde archivo\n'+b+'║'+m+'『'+h+'4'+m+'』 '+bm+'Seleccione el número de contacto\n'+b+'╠══════════════════════════════')
 	pil=str(input(b+'╚══'+m+'〙'+u+'Modo'+m+' ▶ '+h))
 	if( pil == '1' or pil == '01'):
 		single()
